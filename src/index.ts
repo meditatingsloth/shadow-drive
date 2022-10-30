@@ -71,7 +71,7 @@ interface ShadowDrive {
     key: web3.PublicKey,
     version: ShadowDriveVersion
   ): Promise<ShadowDriveResponse>;
-  getStorageAccount(key: web3.PublicKey): Promise<StorageAccountInfo>;
+  getStorageAccount(key: web3.PublicKey): Promise<StorageAccountInfo & StorageAccountResponse>;
   getStorageAccounts(
     version: ShadowDriveVersion
   ): Promise<StorageAccountResponse[]>;

@@ -38,6 +38,7 @@ export type StorageAccountResponse = {
   account: StorageAccount;
 };
 
+// @deprecated - Use StorageAccount instead
 export type StorageAccountInfo = {
   storage_account: PublicKey;
   reserved_bytes: number;
@@ -52,6 +53,7 @@ export type StorageAccountInfo = {
   last_fee_epoch: number;
   identifier: string;
 };
+
 export type StorageAccount = {
   isStatic: boolean;
   initCounter: number;
